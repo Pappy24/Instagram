@@ -1,0 +1,152 @@
+:root{
+    --tiwaladeBlue: skyblue;
+    --tiwaladeGreen: #42b72a;
+    --myshadow: 5px 5px 5px rgba(199, 192, 192, 0.3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;   /*ignore this line, i will explain it later*/
+    flex-direction: column; /*ignore this line, i will explain it later*/
+    justify-content: center; /*in flex direction of column, justify content moves the items inside the container vertically*/
+    align-items: center; /*This moves the items horizontally*/
+}
+
+.main-wrapper{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed;
+}
+
+.main-wrapper .main-container{
+    width: 25%;
+    height: 80%;
+    border: solid 1px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper .main-container .text-images{
+    width: 40px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper .main-container .text-images img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-wrapper .main-container .my-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-container .my-form form{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fafafa;
+    gap: 30px;
+    padding: 10px;
+    box-shadow: var(--myshadow);
+    border-radius: 5px;
+}
+
+
+.main-wrapper .main-container .my-form  form input{
+    width: 100%;
+    height: 50px;
+    border: 1px grey solid;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.main-wrapper .main-container .my-form  form button{
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    background-color: var(--tiwaladeBlue);
+    color: white;
+    border-radius: 4px;
+    border: 1px grey solid;
+}
+
+.main-wrapper .main-container .my-form .space{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.main-wrapper .main-container .my-form .space hr{
+    width: 45%;
+    height: 2px;
+    background-color: grey;
+    opacity: 0.5;
+}
+
+
+
+.main-wrapper .main-container .my-form .Facebook{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.main-wrapper .main-container .my-form .Facebook img{
+    width: 20px;
+    height: 20px;
+}
+
+.main-wrapper .main-container .my-form .Forgot{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.main-wrapper .text{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.main-wrapper .app p{
+    width: 225px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-wrapper .app .play img{
+    width: 100x;
+    height: 100px;
+}
